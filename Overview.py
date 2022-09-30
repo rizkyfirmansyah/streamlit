@@ -20,7 +20,7 @@ st.sidebar.info(
 
 st.info("Click on the left sidebar menu to navigate to other info")
 
-forest_klhk = pd.read_csv("data/forest_klhk_papua_1990_2000.csv")
+forest_klhk = pd.read_csv("https://raw.githubusercontent.com/rizkyfirmansyah/streamlit/papua_forest/data/forest_klhk_papua_1990_2000.csv")
 
 def overview_forest_area():
     """

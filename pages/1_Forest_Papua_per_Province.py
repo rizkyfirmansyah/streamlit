@@ -4,7 +4,7 @@ from streamlit_echarts import st_echarts
 from pandasql import sqldf
 
 st.set_page_config(layout="wide")
-forest_klhk = pd.read_csv("data/forest_klhk_papua_1990_2000.csv")
+forest_klhk = pd.read_csv("https://raw.githubusercontent.com/rizkyfirmansyah/streamlit/papua_forest/data/forest_klhk_papua_1990_2000.csv")
 province = forest_klhk['provinsi'].drop_duplicates().sort_values(ascending=False)
 province_choice = st.sidebar.selectbox('Filter by province:', province, key="province_" + str(province))
 
