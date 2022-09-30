@@ -1,0 +1,572 @@
+﻿provinsi,year,forest_type,hectare,pct_to_boundary
+Papua Barat,1990,Hutan Lahan Kering Primer,6830795.948,68.71189732
+Papua Barat,1996,Hutan Lahan Kering Primer,6830795.948,68.71189732
+Papua Barat,2000,Hutan Lahan Kering Primer,5915228.586,59.50208179
+Papua Barat,2003,Hutan Lahan Kering Primer,5509157.487,55.41735787
+Papua Barat,2006,Hutan Lahan Kering Primer,5358819.609,53.90508888
+Papua Barat,2009,Hutan Lahan Kering Primer,5241664.621,52.72661107
+Papua Barat,2011,Hutan Lahan Kering Primer,5236503.719,52.67469685
+Papua Barat,2012,Hutan Lahan Kering Primer,5234751.665,52.65707271
+Papua Barat,2013,Hutan Lahan Kering Primer,5100066.058,51.30225203
+Papua Barat,2014,Hutan Lahan Kering Primer,5093932.736,51.24055612
+Papua Barat,2015,Hutan Lahan Kering Primer,4861382.748,48.90130443
+Papua Barat,2016,Hutan Lahan Kering Primer,4797121.787,48.25489477
+Papua Barat,2017,Hutan Lahan Kering Primer,4741946.054,47.69987463
+Papua Barat,2018,Hutan Lahan Kering Primer,4726147.441,47.54095426
+Papua Barat,2019,Hutan Lahan Kering Primer,4850727.401,48.79412087
+Papua Barat,2020,Hutan Lahan Kering Primer,5004866.484,50.34462668
+Papua Barat,1990,Hutan Lahan Kering Sekunder,792938.8106,7.976278394
+Papua Barat,1996,Hutan Lahan Kering Sekunder,792938.8106,7.976278394
+Papua Barat,2000,Hutan Lahan Kering Sekunder,1666255.419,16.76108789
+Papua Barat,2003,Hutan Lahan Kering Sekunder,2068991.458,20.812264
+Papua Barat,2006,Hutan Lahan Kering Sekunder,2215927.943,22.29031791
+Papua Barat,2009,Hutan Lahan Kering Sekunder,2324647.779,23.3839454
+Papua Barat,2011,Hutan Lahan Kering Sekunder,2327885.554,23.41651461
+Papua Barat,2012,Hutan Lahan Kering Sekunder,2312388.941,23.2606321
+Papua Barat,2013,Hutan Lahan Kering Sekunder,2437323.604,24.51736672
+Papua Barat,2014,Hutan Lahan Kering Sekunder,2441755.651,24.56194928
+Papua Barat,2015,Hutan Lahan Kering Sekunder,2663544.698,26.79295519
+Papua Barat,2016,Hutan Lahan Kering Sekunder,2718334.449,27.34409269
+Papua Barat,2017,Hutan Lahan Kering Sekunder,2745329.211,27.61563663
+Papua Barat,2018,Hutan Lahan Kering Sekunder,2227385.474,22.40557077
+Papua Barat,2019,Hutan Lahan Kering Sekunder,2271614.834,22.85047986
+Papua Barat,2020,Hutan Lahan Kering Sekunder,2048980.399,20.61097006
+Papua Barat,1990,Hutan Mangrove Primer,331518.5999,3.334790289
+Papua Barat,1996,Hutan Mangrove Primer,331306.6285,3.332658041
+Papua Barat,2000,Hutan Mangrove Primer,330827.2453,3.32783586
+Papua Barat,2003,Hutan Mangrove Primer,330109.3899,3.320614855
+Papua Barat,2006,Hutan Mangrove Primer,329884.1216,3.318348852
+Papua Barat,2009,Hutan Mangrove Primer,325468.2509,3.273929013
+Papua Barat,2011,Hutan Mangrove Primer,325360.8298,3.272848449
+Papua Barat,2012,Hutan Mangrove Primer,325189.5937,3.271125963
+Papua Barat,2013,Hutan Mangrove Primer,320716.9742,3.22613528
+Papua Barat,2014,Hutan Mangrove Primer,320716.9742,3.22613528
+Papua Barat,2015,Hutan Mangrove Primer,319917.6898,3.21809517
+Papua Barat,2016,Hutan Mangrove Primer,317089.1208,3.189642214
+Papua Barat,2017,Hutan Mangrove Primer,317874.4452,3.197541898
+Papua Barat,2018,Hutan Mangrove Primer,319902.9511,3.217946912
+Papua Barat,2019,Hutan Mangrove Primer,319781.4226,3.216724441
+Papua Barat,2020,Hutan Mangrove Primer,324318.7371,3.262365899
+Papua Barat,1990,Hutan Mangrove Sekunder,85916.67205,0.864247387
+Papua Barat,1996,Hutan Mangrove Sekunder,85916.67205,0.864247387
+Papua Barat,2000,Hutan Mangrove Sekunder,85610.8508,0.86117109
+Papua Barat,2003,Hutan Mangrove Sekunder,86328.70627,0.868392095
+Papua Barat,2006,Hutan Mangrove Sekunder,86460.27917,0.869715604
+Papua Barat,2009,Hutan Mangrove Sekunder,90523.23005,0.910585375
+Papua Barat,2011,Hutan Mangrove Sekunder,90630.65119,0.911665938
+Papua Barat,2012,Hutan Mangrove Sekunder,90490.42012,0.910255335
+Papua Barat,2013,Hutan Mangrove Sekunder,94848.32439,0.954092082
+Papua Barat,2014,Hutan Mangrove Sekunder,94826.72509,0.953874811
+Papua Barat,2015,Hutan Mangrove Sekunder,95703.13345,0.962690721
+Papua Barat,2016,Hutan Mangrove Sekunder,98304.91918,0.988862435
+Papua Barat,2017,Hutan Mangrove Sekunder,98476.27185,0.990586094
+Papua Barat,2018,Hutan Mangrove Sekunder,100701.1467,1.01296641
+Papua Barat,2019,Hutan Mangrove Sekunder,100467.2806,1.01061392
+Papua Barat,2020,Hutan Mangrove Sekunder,106659.7906,1.072905212
+Papua Barat,1990,Hutan Rawa Primer,701452.7083,7.056007358
+Papua Barat,1996,Hutan Rawa Primer,701452.7083,7.056007358
+Papua Barat,2000,Hutan Rawa Primer,699857.9915,7.039965886
+Papua Barat,2003,Hutan Rawa Primer,699857.9915,7.039965886
+Papua Barat,2006,Hutan Rawa Primer,699857.9915,7.039965886
+Papua Barat,2009,Hutan Rawa Primer,698748.4088,7.028804445
+Papua Barat,2011,Hutan Rawa Primer,691205.083,6.952925113
+Papua Barat,2012,Hutan Rawa Primer,691780.538,6.958713692
+Papua Barat,2013,Hutan Rawa Primer,680563.6198,6.8458812
+Papua Barat,2014,Hutan Rawa Primer,674124.7228,6.781111467
+Papua Barat,2015,Hutan Rawa Primer,672233.9223,6.76209165
+Papua Barat,2016,Hutan Rawa Primer,671375.0189,6.753451825
+Papua Barat,2017,Hutan Rawa Primer,664099.4798,6.680266196
+Papua Barat,2018,Hutan Rawa Primer,668390.9303,6.723434475
+Papua Barat,2019,Hutan Rawa Primer,536756.5751,5.399306751
+Papua Barat,2020,Hutan Rawa Primer,458701.0696,4.614135897
+Papua Barat,1990,Hutan Rawa Sekunder,61114.54131,0.61475941
+Papua Barat,1996,Hutan Rawa Sekunder,61114.54131,0.61475941
+Papua Barat,2000,Hutan Rawa Sekunder,60960.53162,0.613210206
+Papua Barat,2003,Hutan Rawa Sekunder,60960.53162,0.613210206
+Papua Barat,2006,Hutan Rawa Sekunder,60837.7051,0.611974677
+Papua Barat,2009,Hutan Rawa Sekunder,61452.057,0.618154526
+Papua Barat,2011,Hutan Rawa Sekunder,68995.38282,0.694033857
+Papua Barat,2012,Hutan Rawa Sekunder,69066.75528,0.694751802
+Papua Barat,2013,Hutan Rawa Sekunder,80257.72491,0.807323275
+Papua Barat,2014,Hutan Rawa Sekunder,86617.98815,0.87130202
+Papua Barat,2015,Hutan Rawa Sekunder,87196.72868,0.877123649
+Papua Barat,2016,Hutan Rawa Sekunder,87697.95645,0.882165567
+Papua Barat,2017,Hutan Rawa Sekunder,93139.43702,0.936902153
+Papua Barat,2018,Hutan Rawa Sekunder,665946.5391,6.698846015
+Papua Barat,2019,Hutan Rawa Sekunder,669870.0732,6.738313373
+Papua Barat,2020,Hutan Rawa Sekunder,902680.7477,9.080187334
+Papua Barat,1990,Non Hutan,814977.7476,8.197971032
+Papua Barat,1996,Non Hutan,815189.719,8.200103281
+Papua Barat,2000,Non Hutan,859974.4072,8.650598498
+Papua Barat,2003,Non Hutan,863309.4668,8.684146312
+Papua Barat,2006,Non Hutan,866927.3819,8.720539407
+Papua Barat,2009,Non Hutan,876210.684,8.813921395
+Papua Barat,2011,Non Hutan,878133.8119,8.833266397
+Papua Barat,2012,Non Hutan,895047.1174,9.003399618
+Papua Barat,2013,Non Hutan,904938.726,9.102900642
+Papua Barat,2014,Non Hutan,906740.2333,9.121022247
+Papua Barat,2015,Non Hutan,918736.106,9.241690348
+Papua Barat,2016,Non Hutan,928791.7098,9.342841021
+Papua Barat,2017,Non Hutan,957850.0578,9.635142862
+Papua Barat,2018,Non Hutan,910240.3924,9.156230819
+Papua Barat,2019,Non Hutan,869497.2894,8.746390453
+Papua Barat,2020,Non Hutan,772507.6487,7.770758582
+Papua,1990,Hutan Lahan Kering Primer,5827857.278,70.75966985
+Papua,1996,Hutan Lahan Kering Primer,5827596.74,70.75650649
+Papua,2000,Hutan Lahan Kering Primer,5615720.45,68.18398359
+Papua,2003,Hutan Lahan Kering Primer,5534005.031,67.19182544
+Papua,2006,Hutan Lahan Kering Primer,5335377.322,64.78016187
+Papua,2009,Hutan Lahan Kering Primer,5240200.743,63.62456333
+Papua,2011,Hutan Lahan Kering Primer,5225869.645,63.4505605
+Papua,2012,Hutan Lahan Kering Primer,5226170.9,63.45421821
+Papua,2013,Hutan Lahan Kering Primer,5220239.986,63.38220727
+Papua,2014,Hutan Lahan Kering Primer,5219586.759,63.37427603
+Papua,2015,Hutan Lahan Kering Primer,5216646.711,63.33857907
+Papua,2016,Hutan Lahan Kering Primer,5210152.785,63.25973223
+Papua,2017,Hutan Lahan Kering Primer,5200846.566,63.1467396
+Papua,2018,Hutan Lahan Kering Primer,5106043.002,61.99567007
+Papua,2019,Hutan Lahan Kering Primer,5108515.15,62.02568598
+Papua,2020,Hutan Lahan Kering Primer,5080310.086,61.6832306
+Papua,1990,Hutan Lahan Kering Sekunder,406024.9918,4.929804043
+Papua,1996,Hutan Lahan Kering Sekunder,406024.9918,4.929804043
+Papua,2000,Hutan Lahan Kering Sekunder,583852.7827,7.088922767
+Papua,2003,Hutan Lahan Kering Sekunder,661384.6276,8.030285517
+Papua,2006,Hutan Lahan Kering Sekunder,835864.3784,10.14875359
+Papua,2009,Hutan Lahan Kering Sekunder,912178.2489,11.07532814
+Papua,2011,Hutan Lahan Kering Sekunder,919939.3593,11.16956065
+Papua,2012,Hutan Lahan Kering Sekunder,917715.4709,11.14255903
+Papua,2013,Hutan Lahan Kering Sekunder,921452.8765,11.18793721
+Papua,2014,Hutan Lahan Kering Sekunder,920510.4736,11.17649491
+Papua,2015,Hutan Lahan Kering Sekunder,922616.8693,11.20206998
+Papua,2016,Hutan Lahan Kering Sekunder,929678.1086,11.28780492
+Papua,2017,Hutan Lahan Kering Sekunder,938559.1686,11.39563543
+Papua,2018,Hutan Lahan Kering Sekunder,1002399.104,12.17075612
+Papua,2019,Hutan Lahan Kering Sekunder,998618.8719,12.12485796
+Papua,2020,Hutan Lahan Kering Sekunder,1045204.793,12.69048683
+Papua,1990,Hutan Mangrove Primer,100362.1859,1.218560236
+Papua,1996,Hutan Mangrove Primer,100362.1859,1.218560236
+Papua,2000,Hutan Mangrove Primer,94784.0039,1.15083203
+Papua,2003,Hutan Mangrove Primer,94784.0039,1.15083203
+Papua,2006,Hutan Mangrove Primer,91130.84646,1.106476755
+Papua,2009,Hutan Mangrove Primer,90684.10899,1.101052635
+Papua,2011,Hutan Mangrove Primer,90611.19958,1.100167396
+Papua,2012,Hutan Mangrove Primer,90611.19958,1.100167396
+Papua,2013,Hutan Mangrove Primer,90611.19958,1.100167396
+Papua,2014,Hutan Mangrove Primer,90611.19958,1.100167396
+Papua,2015,Hutan Mangrove Primer,90594.66719,1.099966666
+Papua,2016,Hutan Mangrove Primer,90598.19992,1.100009559
+Papua,2017,Hutan Mangrove Primer,90599.21548,1.10002189
+Papua,2018,Hutan Mangrove Primer,77010.97857,0.935038584
+Papua,2019,Hutan Mangrove Primer,77068.23394,0.935733758
+Papua,2020,Hutan Mangrove Primer,83275.37262,1.011098521
+Papua,1990,Hutan Mangrove Sekunder,23877.84172,0.28991585
+Papua,1996,Hutan Mangrove Sekunder,23877.84172,0.28991585
+Papua,2000,Hutan Mangrove Sekunder,23686.12396,0.287588085
+Papua,2003,Hutan Mangrove Sekunder,23143.89128,0.281004498
+Papua,2006,Hutan Mangrove Sekunder,26424.12689,0.320831895
+Papua,2009,Hutan Mangrove Sekunder,26555.86031,0.322431353
+Papua,2011,Hutan Mangrove Sekunder,26450.98617,0.32115801
+Papua,2012,Hutan Mangrove Sekunder,26450.98617,0.32115801
+Papua,2013,Hutan Mangrove Sekunder,26450.98617,0.32115801
+Papua,2014,Hutan Mangrove Sekunder,26450.98617,0.32115801
+Papua,2015,Hutan Mangrove Sekunder,26472.13348,0.321414773
+Papua,2016,Hutan Mangrove Sekunder,26465.22467,0.321330889
+Papua,2017,Hutan Mangrove Sekunder,26463.78173,0.321313369
+Papua,2018,Hutan Mangrove Sekunder,39904.2644,0.484502698
+Papua,2019,Hutan Mangrove Sekunder,39908.78631,0.484557601
+Papua,2020,Hutan Mangrove Sekunder,41515.69667,0.504068108
+Papua,1990,Hutan Rawa Primer,1291578.595,15.68186567
+Papua,1996,Hutan Rawa Primer,1291578.595,15.68186567
+Papua,2000,Hutan Rawa Primer,1276139.626,15.49441146
+Papua,2003,Hutan Rawa Primer,1256587.468,15.25701646
+Papua,2006,Hutan Rawa Primer,1240414.224,15.06064695
+Papua,2009,Hutan Rawa Primer,1152090.35,13.98825141
+Papua,2011,Hutan Rawa Primer,1137725.08,13.81383366
+Papua,2012,Hutan Rawa Primer,1134718.241,13.77732574
+Papua,2013,Hutan Rawa Primer,1130282.614,13.72347002
+Papua,2014,Hutan Rawa Primer,1130281.521,13.72345675
+Papua,2015,Hutan Rawa Primer,1129459.361,13.71347438
+Papua,2016,Hutan Rawa Primer,1127380.246,13.68823054
+Papua,2017,Hutan Rawa Primer,1126315.128,13.67529828
+Papua,2018,Hutan Rawa Primer,1127958.831,13.6952555
+Papua,2019,Hutan Rawa Primer,1130913.557,13.73113069
+Papua,2020,Hutan Rawa Primer,1124144.499,13.64894331
+Papua,1990,Hutan Rawa Sekunder,147480.9539,1.790658747
+Papua,1996,Hutan Rawa Sekunder,147480.9539,1.790658747
+Papua,2000,Hutan Rawa Sekunder,147789.703,1.794407462
+Papua,2003,Hutan Rawa Sekunder,166966.1833,2.027241136
+Papua,2006,Hutan Rawa Sekunder,180755.292,2.194663351
+Papua,2009,Hutan Rawa Sekunder,254034.6854,3.08439442
+Papua,2011,Hutan Rawa Sekunder,262782.2277,3.190603816
+Papua,2012,Hutan Rawa Sekunder,256109.4001,3.109584832
+Papua,2013,Hutan Rawa Sekunder,257392.7635,3.125166952
+Papua,2014,Hutan Rawa Sekunder,257287.4689,3.123888504
+Papua,2015,Hutan Rawa Sekunder,258837.2989,3.142705962
+Papua,2016,Hutan Rawa Sekunder,260047.2051,3.157396192
+Papua,2017,Hutan Rawa Sekunder,261112.2809,3.170327945
+Papua,2018,Hutan Rawa Sekunder,267776.1094,3.251237666
+Papua,2019,Hutan Rawa Sekunder,267725.5257,3.250623498
+Papua,2020,Hutan Rawa Sekunder,274890.158,3.337613792
+Papua,1990,Non Hutan,384487.4228,4.668302911
+Papua,1996,Non Hutan,384747.9615,4.671466275
+Papua,2000,Non Hutan,439696.5798,5.338631908
+Papua,2003,Non Hutan,444798.0642,5.400572229
+Papua,2006,Non Hutan,471703.0801,5.727242899
+Papua,2009,Non Hutan,505874.1121,6.142134827
+Papua,2011,Non Hutan,518239.6099,6.29227209
+Papua,2012,Non Hutan,529841.9104,6.433142897
+Papua,2013,Non Hutan,535187.6823,6.498049265
+Papua,2014,Non Hutan,536889.6997,6.518714526
+Papua,2015,Non Hutan,536991.0671,6.519945291
+Papua,2016,Non Hutan,537296.3407,6.52365181
+Papua,2017,Non Hutan,537721.9686,6.528819625
+Papua,2018,Non Hutan,569391.6863,6.913341528
+Papua,2019,Non Hutan,567733.8499,6.893212696
+Papua,2020,Non Hutan,541143.3713,6.57036102
+Papua,2009,Non Hutan,51.1614984,0.000621184
+Papua,2011,Non Hutan,51.1614984,0.000621184
+Papua,2012,Non Hutan,51.1614984,0.000621184
+Papua,2013,Non Hutan,51.1614984,0.000621184
+Papua,2014,Non Hutan,51.1614984,0.000621184
+Papua,2015,Non Hutan,51.1614984,0.000621184
+Papua,2016,Non Hutan,51.15978593,0.000621163
+Papua,2017,Non Hutan,51.15978593,0.000621163
+Papua,2018,Non Hutan,51.15978593,0.000621163
+Papua,2019,Non Hutan,51.15978593,0.000621163
+Papua,2020,Non Hutan,51.15978593,0.000621163
+Papua Pegunungan,1990,Hutan Lahan Kering Primer,3682128.544,70.80630217
+Papua Pegunungan,1996,Hutan Lahan Kering Primer,3682128.544,70.80630217
+Papua Pegunungan,2000,Hutan Lahan Kering Primer,3495390.042,67.21537298
+Papua Pegunungan,2003,Hutan Lahan Kering Primer,3467345.454,66.67608341
+Papua Pegunungan,2006,Hutan Lahan Kering Primer,3448225.256,66.30840734
+Papua Pegunungan,2009,Hutan Lahan Kering Primer,3372628.271,64.85469847
+Papua Pegunungan,2011,Hutan Lahan Kering Primer,3358745.954,64.58774539
+Papua Pegunungan,2012,Hutan Lahan Kering Primer,3359704.963,64.60618686
+Papua Pegunungan,2013,Hutan Lahan Kering Primer,3359555.712,64.60331682
+Papua Pegunungan,2014,Hutan Lahan Kering Primer,3356960.145,64.55340477
+Papua Pegunungan,2015,Hutan Lahan Kering Primer,3340223.049,64.23155511
+Papua Pegunungan,2016,Hutan Lahan Kering Primer,3335752.259,64.14558306
+Papua Pegunungan,2017,Hutan Lahan Kering Primer,3335752.259,64.14558306
+Papua Pegunungan,2018,Hutan Lahan Kering Primer,3383102.93,65.05612322
+Papua Pegunungan,2019,Hutan Lahan Kering Primer,3384901.601,65.09071117
+Papua Pegunungan,2020,Hutan Lahan Kering Primer,3352129.369,64.4605103
+Papua Pegunungan,1990,Hutan Lahan Kering Sekunder,581251.0713,11.17729555
+Papua Pegunungan,1996,Hutan Lahan Kering Sekunder,581251.0713,11.17729555
+Papua Pegunungan,2000,Hutan Lahan Kering Sekunder,592201.7229,11.38787352
+Papua Pegunungan,2003,Hutan Lahan Kering Sekunder,603513.0408,11.605387
+Papua Pegunungan,2006,Hutan Lahan Kering Sekunder,555353.0313,10.67928348
+Papua Pegunungan,2009,Hutan Lahan Kering Sekunder,610989.4774,11.74915678
+Papua Pegunungan,2011,Hutan Lahan Kering Sekunder,613251.9599,11.79266369
+Papua Pegunungan,2012,Hutan Lahan Kering Sekunder,614377.8302,11.81431386
+Papua Pegunungan,2013,Hutan Lahan Kering Sekunder,614527.0806,11.8171839
+Papua Pegunungan,2014,Hutan Lahan Kering Sekunder,614545.6869,11.81754169
+Papua Pegunungan,2015,Hutan Lahan Kering Sekunder,628919.6724,12.09394942
+Papua Pegunungan,2016,Hutan Lahan Kering Sekunder,635420.8165,12.2189646
+Papua Pegunungan,2017,Hutan Lahan Kering Sekunder,635420.8165,12.2189646
+Papua Pegunungan,2018,Hutan Lahan Kering Sekunder,585432.8281,11.25770956
+Papua Pegunungan,2019,Hutan Lahan Kering Sekunder,585533.1926,11.25963954
+Papua Pegunungan,2020,Hutan Lahan Kering Sekunder,636901.5289,12.24743829
+Papua Pegunungan,1990,Hutan Rawa Primer,245273.0122,4.716531432
+Papua Pegunungan,1996,Hutan Rawa Primer,245273.0122,4.716531432
+Papua Pegunungan,2000,Hutan Rawa Primer,239228.0033,4.600287602
+Papua Pegunungan,2003,Hutan Rawa Primer,237032.5785,4.558070196
+Papua Pegunungan,2006,Hutan Rawa Primer,236109.6549,4.540322634
+Papua Pegunungan,2009,Hutan Rawa Primer,232638.6385,4.473575958
+Papua Pegunungan,2011,Hutan Rawa Primer,230850.9016,4.439198278
+Papua Pegunungan,2012,Hutan Rawa Primer,231445.0147,4.450622907
+Papua Pegunungan,2013,Hutan Rawa Primer,231445.0147,4.450622907
+Papua Pegunungan,2014,Hutan Rawa Primer,229223.3614,4.407901134
+Papua Pegunungan,2015,Hutan Rawa Primer,230072.8145,4.424235881
+Papua Pegunungan,2016,Hutan Rawa Primer,228917.2938,4.402015541
+Papua Pegunungan,2017,Hutan Rawa Primer,228917.2938,4.402015541
+Papua Pegunungan,2018,Hutan Rawa Primer,228823.8784,4.400219189
+Papua Pegunungan,2019,Hutan Rawa Primer,228823.8784,4.400219188
+Papua Pegunungan,2020,Hutan Rawa Primer,228525.707,4.394485436
+Papua Pegunungan,1990,Hutan Rawa Sekunder,15415.88269,0.296443113
+Papua Pegunungan,1996,Hutan Rawa Sekunder,15415.88269,0.296443113
+Papua Pegunungan,2000,Hutan Rawa Sekunder,15277.33536,0.293778887
+Papua Pegunungan,2003,Hutan Rawa Sekunder,16472.15235,0.316754883
+Papua Pegunungan,2006,Hutan Rawa Sekunder,16790.82557,0.32288288
+Papua Pegunungan,2009,Hutan Rawa Sekunder,18813.90983,0.361786224
+Papua Pegunungan,2011,Hutan Rawa Sekunder,20541.14985,0.395000567
+Papua Pegunungan,2012,Hutan Rawa Sekunder,20541.14985,0.395000567
+Papua Pegunungan,2013,Hutan Rawa Sekunder,20541.14985,0.395000567
+Papua Pegunungan,2014,Hutan Rawa Sekunder,22701.42438,0.436542042
+Papua Pegunungan,2015,Hutan Rawa Sekunder,23912.01683,0.459821396
+Papua Pegunungan,2016,Hutan Rawa Sekunder,23010.7232,0.442489772
+Papua Pegunungan,2017,Hutan Rawa Sekunder,23010.7232,0.442489772
+Papua Pegunungan,2018,Hutan Rawa Sekunder,26229.71733,0.504390129
+Papua Pegunungan,2019,Hutan Rawa Sekunder,26185.08221,0.503531808
+Papua Pegunungan,2020,Hutan Rawa Sekunder,28211.35737,0.542496513
+Papua Pegunungan,1990,Non Hutan,676150.9822,13.0021943
+Papua Pegunungan,1996,Non Hutan,676150.9822,13.0021943
+Papua Pegunungan,2000,Non Hutan,858122.3895,16.50145357
+Papua Pegunungan,2003,Non Hutan,875856.2669,16.84247107
+Papua Pegunungan,2006,Non Hutan,943740.7252,18.14787022
+Papua Pegunungan,2009,Non Hutan,965149.1957,18.55954912
+Papua Pegunungan,2011,Non Hutan,976829.5275,18.78415863
+Papua Pegunungan,2012,Non Hutan,974150.5353,18.73264236
+Papua Pegunungan,2013,Non Hutan,974150.5353,18.73264236
+Papua Pegunungan,2014,Non Hutan,976788.8757,18.78337691
+Papua Pegunungan,2015,Non Hutan,977091.9398,18.78920475
+Papua Pegunungan,2016,Non Hutan,977118.4004,18.78971358
+Papua Pegunungan,2017,Non Hutan,977118.4004,18.78971358
+Papua Pegunungan,2018,Non Hutan,976630.1396,18.78032446
+Papua Pegunungan,2019,Non Hutan,974775.7388,18.74466485
+Papua Pegunungan,2020,Non Hutan,954451.5311,18.35383602
+Papua Selatan,1990,Hutan Lahan Kering Primer,3403012.374,28.8720961
+Papua Selatan,1996,Hutan Lahan Kering Primer,3403012.374,28.8720961
+Papua Selatan,2000,Hutan Lahan Kering Primer,3091521.291,26.2293198
+Papua Selatan,2003,Hutan Lahan Kering Primer,2999765.638,25.45083951
+Papua Selatan,2006,Hutan Lahan Kering Primer,2869206.753,24.3431419
+Papua Selatan,2009,Hutan Lahan Kering Primer,2424388.876,20.56918428
+Papua Selatan,2011,Hutan Lahan Kering Primer,2412168.831,20.46550604
+Papua Selatan,2012,Hutan Lahan Kering Primer,2408160.654,20.43149956
+Papua Selatan,2013,Hutan Lahan Kering Primer,2407147.277,20.42290179
+Papua Selatan,2014,Hutan Lahan Kering Primer,2389230.65,20.27089218
+Papua Selatan,2015,Hutan Lahan Kering Primer,2370438.988,20.11145854
+Papua Selatan,2016,Hutan Lahan Kering Primer,2369743.896,20.10556119
+Papua Selatan,2017,Hutan Lahan Kering Primer,2360734.45,20.02912256
+Papua Selatan,2018,Hutan Lahan Kering Primer,2280268.765,19.34642949
+Papua Selatan,2019,Hutan Lahan Kering Primer,2270012.459,19.25941216
+Papua Selatan,2020,Hutan Lahan Kering Primer,2116709.965,17.95875149
+Papua Selatan,1990,Hutan Lahan Kering Sekunder,1160643.732,9.847221728
+Papua Selatan,1996,Hutan Lahan Kering Sekunder,1160643.732,9.847221728
+Papua Selatan,2000,Hutan Lahan Kering Sekunder,1173636.98,9.957460022
+Papua Selatan,2003,Hutan Lahan Kering Sekunder,1268698.92,10.76399176
+Papua Selatan,2006,Hutan Lahan Kering Sekunder,1327634.872,11.26402064
+Papua Selatan,2009,Hutan Lahan Kering Sekunder,1762133.661,14.95042827
+Papua Selatan,2011,Hutan Lahan Kering Sekunder,1770369.175,15.02030065
+Papua Selatan,2012,Hutan Lahan Kering Sekunder,1767821.366,14.99868433
+Papua Selatan,2013,Hutan Lahan Kering Sekunder,1763865.725,14.96512358
+Papua Selatan,2014,Hutan Lahan Kering Sekunder,1774726.078,15.05726582
+Papua Selatan,2015,Hutan Lahan Kering Sekunder,1752142.172,14.86565772
+Papua Selatan,2016,Hutan Lahan Kering Sekunder,1752718.066,14.87054377
+Papua Selatan,2017,Hutan Lahan Kering Sekunder,1745345.95,14.8079967
+Papua Selatan,2018,Hutan Lahan Kering Sekunder,1767797.007,14.99847767
+Papua Selatan,2019,Hutan Lahan Kering Sekunder,1775466.647,15.06354901
+Papua Selatan,2020,Hutan Lahan Kering Sekunder,1995844.095,16.93329209
+Papua Selatan,1990,Hutan Mangrove Primer,393153.8976,3.335626165
+Papua Selatan,1996,Hutan Mangrove Primer,393153.8976,3.335626165
+Papua Selatan,2000,Hutan Mangrove Primer,368938.6056,3.130176946
+Papua Selatan,2003,Hutan Mangrove Primer,361585.4213,3.0677905
+Papua Selatan,2006,Hutan Mangrove Primer,354594.6347,3.008478738
+Papua Selatan,2009,Hutan Mangrove Primer,353125.6982,2.996015875
+Papua Selatan,2011,Hutan Mangrove Primer,353125.6982,2.996015875
+Papua Selatan,2012,Hutan Mangrove Primer,353749.094,3.001304938
+Papua Selatan,2013,Hutan Mangrove Primer,353749.094,3.001304938
+Papua Selatan,2014,Hutan Mangrove Primer,353749.094,3.001304938
+Papua Selatan,2015,Hutan Mangrove Primer,352839.2487,2.993585559
+Papua Selatan,2016,Hutan Mangrove Primer,352396.5262,2.989829378
+Papua Selatan,2017,Hutan Mangrove Primer,352396.5262,2.989829378
+Papua Selatan,2018,Hutan Mangrove Primer,374904.3638,3.180792084
+Papua Selatan,2019,Hutan Mangrove Primer,374811.6773,3.180005706
+Papua Selatan,2020,Hutan Mangrove Primer,452024.5054,3.835100648
+Papua Selatan,1990,Hutan Mangrove Sekunder,67585.28301,0.573412192
+Papua Selatan,1996,Hutan Mangrove Sekunder,67585.28301,0.573412192
+Papua Selatan,2000,Hutan Mangrove Sekunder,40735.85404,0.345614227
+Papua Selatan,2003,Hutan Mangrove Sekunder,46947.49761,0.398315526
+Papua Selatan,2006,Hutan Mangrove Sekunder,47041.36292,0.399111905
+Papua Selatan,2009,Hutan Mangrove Sekunder,48409.07003,0.41071591
+Papua Selatan,2011,Hutan Mangrove Sekunder,48215.21517,0.409071191
+Papua Selatan,2012,Hutan Mangrove Sekunder,48163.02754,0.408628417
+Papua Selatan,2013,Hutan Mangrove Sekunder,48163.02754,0.408628417
+Papua Selatan,2014,Hutan Mangrove Sekunder,48163.02754,0.408628417
+Papua Selatan,2015,Hutan Mangrove Sekunder,48013.4344,0.407359228
+Papua Selatan,2016,Hutan Mangrove Sekunder,48455.51761,0.411109984
+Papua Selatan,2017,Hutan Mangrove Sekunder,48455.51761,0.411109984
+Papua Selatan,2018,Hutan Mangrove Sekunder,49251.23083,0.417861034
+Papua Selatan,2019,Hutan Mangrove Sekunder,49022.12942,0.415917275
+Papua Selatan,2020,Hutan Mangrove Sekunder,45591.49118,0.386810793
+Papua Selatan,1990,Hutan Rawa Primer,2534254.259,21.50131251
+Papua Selatan,1996,Hutan Rawa Primer,2534254.259,21.50131251
+Papua Selatan,2000,Hutan Rawa Primer,2384158.523,20.22785886
+Papua Selatan,2003,Hutan Rawa Primer,2305749.856,19.56261809
+Papua Selatan,2006,Hutan Rawa Primer,2165287.754,18.37089886
+Papua Selatan,2009,Hutan Rawa Primer,2108980.825,17.89317533
+Papua Selatan,2011,Hutan Rawa Primer,2105064.045,17.85994429
+Papua Selatan,2012,Hutan Rawa Primer,2106954.551,17.87598386
+Papua Selatan,2013,Hutan Rawa Primer,2102849.178,17.84115275
+Papua Selatan,2014,Hutan Rawa Primer,2090354.086,17.73514094
+Papua Selatan,2015,Hutan Rawa Primer,2086591.291,17.70321634
+Papua Selatan,2016,Hutan Rawa Primer,2067595.324,17.54204932
+Papua Selatan,2017,Hutan Rawa Primer,2067147.133,17.53824675
+Papua Selatan,2018,Hutan Rawa Primer,2058380.187,17.46386556
+Papua Selatan,2019,Hutan Rawa Primer,2056974.571,17.45193992
+Papua Selatan,2020,Hutan Rawa Primer,1960079.097,16.62985198
+Papua Selatan,1990,Hutan Rawa Sekunder,910112.7169,7.721647453
+Papua Selatan,1996,Hutan Rawa Sekunder,910112.7169,7.721647453
+Papua Selatan,2000,Hutan Rawa Sekunder,619593.2802,5.256800378
+Papua Selatan,2003,Hutan Rawa Sekunder,656170.8954,5.567134959
+Papua Selatan,2006,Hutan Rawa Sekunder,756613.906,6.41932118
+Papua Selatan,2009,Hutan Rawa Sekunder,811294.9458,6.883250212
+Papua Selatan,2011,Hutan Rawa Sekunder,815182.3664,6.916232161
+Papua Selatan,2012,Hutan Rawa Sekunder,816543.6472,6.927781643
+Papua Selatan,2013,Hutan Rawa Sekunder,820658.2709,6.962691247
+Papua Selatan,2014,Hutan Rawa Sekunder,831240.3791,7.052472773
+Papua Selatan,2015,Hutan Rawa Sekunder,818908.7131,6.947847515
+Papua Selatan,2016,Hutan Rawa Sekunder,833035.6099,7.067704006
+Papua Selatan,2017,Hutan Rawa Sekunder,833619.8556,7.072660908
+Papua Selatan,2018,Hutan Rawa Sekunder,1014360.336,8.606113022
+Papua Selatan,2019,Hutan Rawa Sekunder,1012383.841,8.589343892
+Papua Selatan,2020,Hutan Rawa Sekunder,1266356.593,10.74411881
+Papua Selatan,1990,Non Hutan,3011971.968,25.55440139
+Papua Selatan,1996,Non Hutan,3011971.968,25.55440139
+Papua Selatan,2000,Non Hutan,3797692.988,32.22067535
+Papua Selatan,2003,Non Hutan,3837359.293,32.55721524
+Papua Selatan,2006,Non Hutan,3955898.239,33.56293236
+Papua Selatan,2009,Non Hutan,3967944.445,33.6651357
+Papua Selatan,2011,Non Hutan,3972152.19,33.70083537
+Papua Selatan,2012,Non Hutan,3974885.182,33.72402283
+Papua Selatan,2013,Non Hutan,3979844.949,33.76610286
+Papua Selatan,2014,Non Hutan,3988814.207,33.84220052
+Papua Selatan,2015,Non Hutan,4047326.561,34.33863548
+Papua Selatan,2016,Non Hutan,4052315.469,34.38096275
+Papua Selatan,2017,Non Hutan,4068560.976,34.51879411
+Papua Selatan,2018,Non Hutan,3932681.579,33.36595581
+Papua Selatan,2019,Non Hutan,3936794.06,33.40084724
+Papua Selatan,2020,Non Hutan,3702055.384,31.40925953
+Papua Selatan,1990,Non Hutan,1810.474367,0.015360564
+Papua Selatan,1996,Non Hutan,1810.474367,0.015360564
+Papua Selatan,2000,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2003,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2006,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2009,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2011,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2012,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2013,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2014,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2015,Non Hutan,1780.238391,0.015104034
+Papua Selatan,2016,Non Hutan,1780.237293,0.015104024
+Papua Selatan,2017,Non Hutan,1780.237293,0.015104024
+Papua Selatan,2018,Non Hutan,1493.233028,0.012669001
+Papua Selatan,2019,Non Hutan,3658.663175,0.031041108
+Papua Selatan,2020,Non Hutan,1812.988264,0.015381893
+Papua Tengah,1990,Hutan Lahan Kering Primer,4022121.128,66.32683705
+Papua Tengah,1996,Hutan Lahan Kering Primer,4022121.128,66.32683705
+Papua Tengah,2000,Hutan Lahan Kering Primer,3852243.559,63.52546894
+Papua Tengah,2003,Hutan Lahan Kering Primer,3788210.978,62.4695389
+Papua Tengah,2006,Hutan Lahan Kering Primer,3728874.846,61.49105569
+Papua Tengah,2009,Hutan Lahan Kering Primer,3645392.111,60.11438264
+Papua Tengah,2011,Hutan Lahan Kering Primer,3638761.119,60.00503418
+Papua Tengah,2012,Hutan Lahan Kering Primer,3639461.119,60.01657755
+Papua Tengah,2013,Hutan Lahan Kering Primer,3639461.119,60.01657755
+Papua Tengah,2014,Hutan Lahan Kering Primer,3631828.43,59.89071059
+Papua Tengah,2015,Hutan Lahan Kering Primer,3629482.584,59.8520264
+Papua Tengah,2016,Hutan Lahan Kering Primer,3570719.153,58.88298732
+Papua Tengah,2017,Hutan Lahan Kering Primer,3571732.862,58.8997039
+Papua Tengah,2018,Hutan Lahan Kering Primer,3541380.094,58.39917121
+Papua Tengah,2019,Hutan Lahan Kering Primer,3533770.811,58.27369024
+Papua Tengah,2020,Hutan Lahan Kering Primer,3555666.992,58.63476948
+Papua Tengah,1990,Hutan Lahan Kering Sekunder,284931.2044,4.698661467
+Papua Tengah,1996,Hutan Lahan Kering Sekunder,284931.2044,4.698661467
+Papua Tengah,2000,Hutan Lahan Kering Sekunder,362941.6063,5.985092942
+Papua Tengah,2003,Hutan Lahan Kering Sekunder,426067.9126,7.026078059
+Papua Tengah,2006,Hutan Lahan Kering Sekunder,457093.8892,7.537712301
+Papua Tengah,2009,Hutan Lahan Kering Sekunder,513220.6941,8.463272056
+Papua Tengah,2011,Hutan Lahan Kering Sekunder,518866.8458,8.556379987
+Papua Tengah,2012,Hutan Lahan Kering Sekunder,519273.112,8.563079526
+Papua Tengah,2013,Hutan Lahan Kering Sekunder,516827.8,8.522755079
+Papua Tengah,2014,Hutan Lahan Kering Sekunder,519929.962,8.573911319
+Papua Tengah,2015,Hutan Lahan Kering Sekunder,518826.8515,8.555720462
+Papua Tengah,2016,Hutan Lahan Kering Sekunder,577454.7852,9.52252511
+Papua Tengah,2017,Hutan Lahan Kering Sekunder,576213.8506,9.502061462
+Papua Tengah,2018,Hutan Lahan Kering Sekunder,596598.7021,9.838218103
+Papua Tengah,2019,Hutan Lahan Kering Sekunder,600709.4808,9.906006949
+Papua Tengah,2020,Hutan Lahan Kering Sekunder,594743.6927,9.807628049
+Papua Tengah,1990,Hutan Mangrove Primer,213172.2894,3.515320214
+Papua Tengah,1996,Hutan Mangrove Primer,213172.2894,3.515320214
+Papua Tengah,2000,Hutan Mangrove Primer,211178.0633,3.482434403
+Papua Tengah,2003,Hutan Mangrove Primer,211178.0633,3.482434403
+Papua Tengah,2006,Hutan Mangrove Primer,209391.6786,3.452976005
+Papua Tengah,2009,Hutan Mangrove Primer,208032.3811,3.430560493
+Papua Tengah,2011,Hutan Mangrove Primer,208027.5695,3.430481147
+Papua Tengah,2012,Hutan Mangrove Primer,208027.5695,3.430481147
+Papua Tengah,2013,Hutan Mangrove Primer,208027.5695,3.430481147
+Papua Tengah,2014,Hutan Mangrove Primer,204708.9721,3.375755778
+Papua Tengah,2015,Hutan Mangrove Primer,204706.5159,3.375715272
+Papua Tengah,2016,Hutan Mangrove Primer,204639.7774,3.374614721
+Papua Tengah,2017,Hutan Mangrove Primer,204639.7774,3.374614721
+Papua Tengah,2018,Hutan Mangrove Primer,200849.5757,3.312112354
+Papua Tengah,2019,Hutan Mangrove Primer,200848.3857,3.31209273
+Papua Tengah,2020,Hutan Mangrove Primer,200762.138,3.310670461
+Papua Tengah,1990,Hutan Mangrove Sekunder,6425.103612,0.105953249
+Papua Tengah,1996,Hutan Mangrove Sekunder,6425.103612,0.105953249
+Papua Tengah,2000,Hutan Mangrove Sekunder,6425.103612,0.105953249
+Papua Tengah,2003,Hutan Mangrove Sekunder,6425.103612,0.105953249
+Papua Tengah,2006,Hutan Mangrove Sekunder,8137.756537,0.134195772
+Papua Tengah,2009,Hutan Mangrove Sekunder,9328.200972,0.153826811
+Papua Tengah,2011,Hutan Mangrove Sekunder,9315.852043,0.153623171
+Papua Tengah,2012,Hutan Mangrove Sekunder,9315.852043,0.153623171
+Papua Tengah,2013,Hutan Mangrove Sekunder,9315.852043,0.153623171
+Papua Tengah,2014,Hutan Mangrove Sekunder,12043.46234,0.198602861
+Papua Tengah,2015,Hutan Mangrove Sekunder,12043.46244,0.198602863
+Papua Tengah,2016,Hutan Mangrove Sekunder,12110.20087,0.199703414
+Papua Tengah,2017,Hutan Mangrove Sekunder,12110.20087,0.199703414
+Papua Tengah,2018,Hutan Mangrove Sekunder,14921.34416,0.246060606
+Papua Tengah,2019,Hutan Mangrove Sekunder,14921.34416,0.246060606
+Papua Tengah,2020,Hutan Mangrove Sekunder,14943.19346,0.246420912
+Papua Tengah,1990,Hutan Rawa Primer,760443.4303,12.54010157
+Papua Tengah,1996,Hutan Rawa Primer,760443.4303,12.54010157
+Papua Tengah,2000,Hutan Rawa Primer,749876.6253,12.36584955
+Papua Tengah,2003,Hutan Rawa Primer,749736.6271,12.36354091
+Papua Tengah,2006,Hutan Rawa Primer,747637.2288,12.32892075
+Papua Tengah,2009,Hutan Rawa Primer,736420.5597,12.14395213
+Papua Tengah,2011,Hutan Rawa Primer,735939.4893,12.13601904
+Papua Tengah,2012,Hutan Rawa Primer,735646.5861,12.13118891
+Papua Tengah,2013,Hutan Rawa Primer,735646.5861,12.13118891
+Papua Tengah,2014,Hutan Rawa Primer,735135.2606,12.12275689
+Papua Tengah,2015,Hutan Rawa Primer,732300.9675,12.07601795
+Papua Tengah,2016,Hutan Rawa Primer,730023.7284,12.03846511
+Papua Tengah,2017,Hutan Rawa Primer,730023.7284,12.03846511
+Papua Tengah,2018,Hutan Rawa Primer,720716.146,11.88497831
+Papua Tengah,2019,Hutan Rawa Primer,720713.3083,11.88493151
+Papua Tengah,2020,Hutan Rawa Primer,709795.2139,11.70488655
+Papua Tengah,1990,Hutan Rawa Sekunder,65065.98385,1.072971393
+Papua Tengah,1996,Hutan Rawa Sekunder,65065.98385,1.072971393
+Papua Tengah,2000,Hutan Rawa Sekunder,60692.31868,1.000847414
+Papua Tengah,2003,Hutan Rawa Sekunder,60832.31681,1.003156055
+Papua Tengah,2006,Hutan Rawa Sekunder,58461.81662,0.964065293
+Papua Tengah,2009,Hutan Rawa Sekunder,63226.624,1.042639407
+Papua Tengah,2011,Hutan Rawa Sekunder,63685.3377,1.050203831
+Papua Tengah,2012,Hutan Rawa Sekunder,63978.24092,1.055033955
+Papua Tengah,2013,Hutan Rawa Sekunder,63978.24092,1.055033955
+Papua Tengah,2014,Hutan Rawa Sekunder,63599.05089,1.048780917
+Papua Tengah,2015,Hutan Rawa Sekunder,64216.64894,1.058965425
+Papua Tengah,2016,Hutan Rawa Sekunder,65346.87594,1.077603447
+Papua Tengah,2017,Hutan Rawa Sekunder,65346.87594,1.077603447
+Papua Tengah,2018,Hutan Rawa Sekunder,71543.42782,1.179787761
+Papua Tengah,2019,Hutan Rawa Sekunder,71520.1633,1.179404117
+Papua Tengah,2020,Hutan Rawa Sekunder,72340.85969,1.19293782
+Papua Tengah,1990,Non Hutan,596693.8633,9.83978736
+Papua Tengah,1996,Non Hutan,596693.8633,9.83978736
+Papua Tengah,2000,Non Hutan,705929.5667,11.64114005
+Papua Tengah,2003,Non Hutan,706835.841,11.65608497
+Papua Tengah,2006,Non Hutan,739689.6272,12.19786073
+Papua Tengah,2009,Non Hutan,773666.2719,12.758153
+Papua Tengah,2011,Non Hutan,774690.6298,12.77504519
+Papua Tengah,2012,Non Hutan,773584.363,12.75680228
+Papua Tengah,2013,Non Hutan,776029.6751,12.79712673
+Papua Tengah,2014,Non Hutan,782041.7054,12.89626819
+Papua Tengah,2015,Non Hutan,787714.1104,12.98980905
+Papua Tengah,2016,Non Hutan,788996.6197,13.01095829
+Papua Tengah,2017,Non Hutan,789223.8457,13.01470536
+Papua Tengah,2018,Non Hutan,803281.8513,13.24652907
+Papua Tengah,2019,Non Hutan,806807.6474,13.30467125
+Papua Tengah,2020,Non Hutan,801039.0508,13.20954414
+Papua Tengah,1990,Non Hutan,447.7002864,0.007382807
+Papua Tengah,1996,Non Hutan,447.7002864,0.007382807
+Papua Tengah,2000,Non Hutan,13.86056158,0.000228568
+Papua Tengah,2003,Non Hutan,13.86056158,0.000228568
+Papua Tengah,2006,Non Hutan,13.86056158,0.000228568
+Papua Tengah,2009,Non Hutan,13.86056158,0.000228568
+Papua Tengah,2011,Non Hutan,13.86056158,0.000228568
+Papua Tengah,2012,Non Hutan,13.86056158,0.000228568
+Papua Tengah,2013,Non Hutan,13.86056158,0.000228568
+Papua Tengah,2014,Non Hutan,13.86056158,0.000228568
+Papua Tengah,2015,Non Hutan,9.562554372,0.000157691
+Papua Tengah,2016,Non Hutan,9.562554372,0.000157691
+Papua Tengah,2017,Non Hutan,9.562554372,0.000157691
+Papua Tengah,2018,Non Hutan,9.562554372,0.000157691
+Papua Tengah,2019,Non Hutan,9.562554372,0.000157691
+Papua Tengah,2020,Non Hutan,9.562554372,0.000157691
