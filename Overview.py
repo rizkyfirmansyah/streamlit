@@ -3,7 +3,7 @@ import pandas as pd
 from streamlit_echarts import st_echarts
 from pandasql import sqldf
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Overview", page_icon="☯")
 
 st.sidebar.title("About")
 
@@ -21,6 +21,290 @@ st.sidebar.info(
 st.info("Click on the left sidebar menu to navigate to other info")
 
 forest_klhk = pd.read_csv("https://raw.githubusercontent.com/rizkyfirmansyah/streamlit/papua_forest/data/forest_klhk_papua_1990_2000.csv")
+
+def overview_pie_forest():
+    """
+    Get percentage of forest stock & non forest on each year
+    41228227.5 is total area of boundary papua islands based on calculate geometry World Cylindrical Equal Area
+    """
+    st.title("Overview of Percentage Forest Stock & Non Forest in Papua Islands (1990 - 2020)")
+    years = forest_klhk['year'].drop_duplicates().sort_values(ascending=False)
+    year_choice = st.selectbox('Filter by year:', years)
+    forest_classes = ['Forest vs Non Forest', '6 classes of forest vs Non Forest']
+    forest_choices = st.selectbox('Simplify forest classes:', forest_classes)
+
+    if forest_choices == 'Forest vs Non Forest':
+        query = """
+            select round(cast(sum(percentage) as numeric), 2) as percentage, forest as forest_type
+            from (select (sum(hectare) / 41228227.5 * 100) as percentage, forest_type,
+                case when forest_type like 'Hutan%' then 'Hutan'
+                  else 'Non Hutan'
+                end as forest
+            from forest_klhk
+            where year = """+ str(year_choice) +"""
+            group by forest_type) as forest_non
+            group by forest
+        """
+    elif forest_choices == '6 classes of forest vs Non Forest':
+        query = """
+            select round(cast(sum(hectare) / 41228227.5 * 100 as numeric), 2) as percentage, forest_type from forest_klhk
+            where year = """+ str(year_choice) +"""
+            group by forest_type
+        """
+    forest_pct = sqldf(query)
+
+    if forest_choices == 'Forest vs Non Forest':
+        options = {
+            "title": {
+                "text": "Forest vs Non Forest in Papua Islands on " + str(year_choice),
+                "left": "center",
+                "top": 20,
+                "textStyle": {
+                    "color": "#2A2529"
+                }
+            },
+            "backgroundColor": '#c3c3c3',
+            "tooltip": {
+                "trigger": 'item',
+            },
+            "legend": {
+                "orient": 'vertical',
+                "left": 'left',
+                "shadowColor": 'rgba(0, 0, 0, 0.5)',
+                "shadowBlur": 10
+            },
+            "series": [
+                {
+                    "name": "Percentage to Papua's Island Administrative Boundary",
+                    "type": "pie",
+                    "center": ['50%', '50%'],
+                    "data": [
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan'].iloc[-1]['percentage'], "name": 'Hutan' },
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Non Hutan'].iloc[-1]['percentage'], "name": 'Non Hutan' },
+                    ],
+                    "labelLine": {
+                        "lineStyle": {
+                            "color": 'rgba(255, 255, 255, 0.3)'
+                        },
+                        "smooth": 0.2,
+                        "length": 10,
+                        "length2": 15
+                    },
+                    "color": ['#00b04f', '#978594'],
+                    "itemStyle": {
+                        "emphasis": {
+                            "shadowBlur": 10,
+                            "shadowOffsetX": 0,
+                            "shadowColor": 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+                    "animationType": 'scale',
+                    "animationEasing": 'elasticOut'
+                }
+            ]
+        }
+    elif forest_choices == '6 classes of forest vs Non Forest':
+        options = {
+            "title": {
+                "text": "Forest Classes vs Non Forest on " + str(year_choice),
+                "left": "center",
+                "top": 20,
+                "textStyle": {
+                    "color": "#2A2529"
+                }
+            },
+            "backgroundColor": '#c3c3c3',
+            "tooltip": {
+                "trigger": 'item',
+            },
+            "legend": {
+                "orient": 'vertical',
+                "left": 'left',
+                "shadowColor": 'rgba(0, 0, 0, 0.5)',
+                "shadowBlur": 10
+            },
+            "series": [
+                {
+                    "name": "Percentage to Papua's Island Administrative Boundary",
+                    "type": "pie",
+                    "radius": '55%',
+                    "center": ['50%', '50%'],
+                    "data": [
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Lahan Kering Primer'].iloc[-1]['percentage'], "name": 'Hutan Lahan Kering Primer' },
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Lahan Kering Sekunder'].iloc[-1]['percentage'], "name": 'Hutan Lahan Kering Sekunder' },
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Mangrove Primer'].iloc[-1]['percentage'], "name": 'Hutan Mangrove Primer' },
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Mangrove Sekunder'].iloc[-1]['percentage'], "name": 'Hutan Mangrove Sekunder' },
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Rawa Primer'].iloc[-1]['percentage'], "name": 'Hutan Rawa Primer' },
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Rawa Sekunder'].iloc[-1]['percentage'], "name": 'Hutan Rawa Sekunder' },
+                        { "value": forest_pct[forest_pct['forest_type'] == 'Non Hutan'].iloc[-1]['percentage'], "name": 'Non Hutan' },
+                    ],
+                    "roseType": 'radius',
+                    "labelLine": {
+                        "lineStyle": {
+                          "color": 'rgba(255, 255, 255, 0.3)'
+                        },
+                        "smooth": 0.2,
+                        "length": 10,
+                        "length2": 15
+                    },
+                    "color": ['#00b04f', '#7BE32F', '#2F70E3', '#2FE3D2', '#ffbf00', '#E3D52F', '#978594'],
+                    "itemStyle": {
+                        "emphasis": {
+                            "shadowBlur": 10,
+                            "shadowOffsetX": 0,
+                            "shadowColor": 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+                    "animationType": 'scale',
+                    "animationEasing": 'elasticOut'
+                }
+            ]
+        }
+    st_echarts(options=options, height="700px")
+
+
+def overview_forest_provinces():
+    st.title("Overview of Percentage Forest Stock & Non Forest on each provinces (1990 - 2020)")
+    years = forest_klhk['year'].drop_duplicates().sort_values(ascending=False)
+    year_choice = st.selectbox('Filter by year:', years, key="year_province_" + str(years))
+    # forest_classes = ['Forest vs Non Forest', '6 classes of forest vs Non Forest']
+    # forest_choices = st.selectbox('Simplify forest classes:', forest_classes, key="forest_province_" + str(year_choice))
+
+    # if forest_choices == 'Forest vs Non Forest':
+    # elif forest_choices == '6 classes of forest vs Non Forest':
+    #     query = """
+    #         select round(cast(sum(hectare) / 41228227.5 * 100 as numeric), 2) as percentage, forest_type from forest_klhk
+    #         where year = """+ str(year_choice) +"""
+    #         group by forest_type
+    #     """
+    row1_col1, row1_col2 = st.columns(2)
+    row2_col1, row2_col2 = st.columns(2)
+    def _chart_options(df, region):
+        options = {
+            "title": {
+                "text": "Forest vs Non Forest in "+ region +" on " + str(year_choice),
+                "left": "center",
+                "top": 20,
+                "textStyle": {
+                    "color": "#2A2529"
+                }
+            },
+            "backgroundColor": '#c3c3c3',
+            "tooltip": {
+                "trigger": 'item',
+            },
+            "legend": {
+                "orient": 'vertical',
+                "left": 'left',
+                "shadowColor": 'rgba(0, 0, 0, 0.5)',
+                "shadowBlur": 10
+            },
+            "series": [
+                {
+                    "name": "Percentage to "+ region +" Administrative Boundary",
+                    "type": "pie",
+                    "center": ['50%', '50%'],
+                    "data": [
+                        { "value": df[df['forest_type'] == 'Hutan'].iloc[-1]['percentage'], "name": 'Hutan' },
+                        { "value": df[df['forest_type'] == 'Non Hutan'].iloc[-1]['percentage'], "name": 'Non Hutan' },
+                    ],
+                    "labelLine": {
+                        "lineStyle": {
+                            "color": 'rgba(255, 255, 255, 0.3)'
+                        },
+                        "smooth": 0.2,
+                        "length": 10,
+                        "length2": 15
+                    },
+                    "color": ['#00b04f', '#978594'],
+                    "itemStyle": {
+                        "emphasis": {
+                            "shadowBlur": 10,
+                            "shadowOffsetX": 0,
+                            "shadowColor": 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+                    "animationType": 'scale',
+                    "animationEasing": 'elasticOut'
+                }
+            ]
+        }
+        return options
+
+    with row1_col1:
+        query = """
+            select round(cast(sum(percentage) as numeric), 2) as percentage, forest as forest_type
+            from (select sum(pct_to_boundary) as percentage, forest_type,
+                case when forest_type like 'Hutan%' then 'Hutan'
+                    else 'Non Hutan'
+                end as forest
+            from forest_klhk
+            where year = """+ str(year_choice) +""" and provinsi = 'Papua Barat'
+            group by forest_type) as forest_non
+            group by forest
+        """
+        forest_pct_papbar = sqldf(query)
+        st_echarts(options=_chart_options(forest_pct_papbar, 'Papua Barat'), height="700px")
+    with row1_col2:
+        query = """
+            select round(cast(sum(percentage) as numeric), 2) as percentage, forest as forest_type
+            from (select sum(pct_to_boundary) as percentage, forest_type,
+                case when forest_type like 'Hutan%' then 'Hutan'
+                    else 'Non Hutan'
+                end as forest
+            from forest_klhk
+            where year = """+ str(year_choice) +""" and provinsi = 'Papua'
+            group by forest_type) as forest_non
+            group by forest
+        """
+        forest_pct_papua = sqldf(query)
+        st_echarts(options=_chart_options(forest_pct_papua, 'Papua'), height="700px")
+
+    with row2_col1:
+        query = """
+            select round(cast(sum(percentage) as numeric), 2) as percentage, forest as forest_type
+            from (select sum(pct_to_boundary) as percentage, forest_type,
+                case when forest_type like 'Hutan%' then 'Hutan'
+                    else 'Non Hutan'
+                end as forest
+            from forest_klhk
+            where year = """+ str(year_choice) +""" and provinsi = 'Papua Tengah'
+            group by forest_type) as forest_non
+            group by forest
+        """
+        forest_pct_papua_central = sqldf(query)
+        st_echarts(options=_chart_options(forest_pct_papua_central, 'Papua Tengah'), height="700px")
+    with row2_col2:
+        query = """
+            select round(cast(sum(percentage) as numeric), 2) as percentage, forest as forest_type
+            from (select sum(pct_to_boundary) as percentage, forest_type,
+                case when forest_type like 'Hutan%' then 'Hutan'
+                    else 'Non Hutan'
+                end as forest
+            from forest_klhk
+            where year = """+ str(year_choice) +""" and provinsi = 'Papua Selatan'
+            group by forest_type) as forest_non
+            group by forest
+        """
+        forest_pct_papua_south = sqldf(query)
+        st_echarts(options=_chart_options(forest_pct_papua_south, 'Papua Selatan'), height="700px")
+
+    query = """
+        select round(cast(sum(percentage) as numeric), 2) as percentage, forest as forest_type
+        from (select sum(pct_to_boundary) as percentage, forest_type,
+            case when forest_type like 'Hutan%' then 'Hutan'
+                else 'Non Hutan'
+            end as forest
+        from forest_klhk
+        where year = """+ str(year_choice) +""" and provinsi = 'Papua Pegunungan'
+        group by forest_type) as forest_non
+        group by forest
+    """
+    forest_pct_papua_peg = sqldf(query)
+    st_echarts(options=_chart_options(forest_pct_papua_peg, 'Papua Pegunungan'), height="700px")
+
+    
+
 
 def overview_forest_area():
     """
@@ -235,146 +519,7 @@ def overview_forest_per_year():
     st_echarts(options=options, height='600px')
 
 
-def overview_pie_forest():
-    """
-    Get percentage of forest stock & non forest on each year
-    41228227.5 is total area of boundary papua islands based on calculate geometry World Cylindrical Equal Area
-    """
-    st.title("Overview of Percentage Forest Stock & Non Forest in Papua Islands (1990 - 2020)")
-    years = forest_klhk['year'].drop_duplicates().sort_values(ascending=False)
-    year_choice = st.selectbox('Filter by year:', years)
-    forest_classes = ['Forest vs Non Forest', '6 classes of forest vs Non Forest']
-    forest_choices = st.selectbox('Simplify forest classes:', forest_classes)
-
-    if forest_choices == 'Forest vs Non Forest':
-        query = """
-            select round(cast(sum(percentage) as numeric), 2) as percentage, forest as forest_type
-            from (select (sum(hectare) / 41228227.5 * 100) as percentage, forest_type,
-                case when forest_type like 'Hutan%' then 'Hutan'
-                  else 'Non Hutan'
-                end as forest
-            from forest_klhk
-            where year = """+ str(year_choice) +"""
-            group by forest_type) as forest_non
-            group by forest
-        """
-    elif forest_choices == '6 classes of forest vs Non Forest':
-        query = """
-            select round(cast(sum(hectare) / 41228227.5 * 100 as numeric), 2) as percentage, forest_type from forest_klhk
-            where year = """+ str(year_choice) +"""
-            group by forest_type
-        """
-    forest_pct = sqldf(query)
-
-    if forest_choices == 'Forest vs Non Forest':
-        options = {
-          "title": {
-              "text": "Forest vs Non Forest on " + str(year_choice),
-              "left": "center",
-              "top": 20,
-              "textStyle": {
-                  "color": "#2A2529"
-              }
-          },
-          "backgroundColor": '#c3c3c3',
-          "tooltip": {
-              "trigger": 'item',
-          },
-          "legend": {
-              "orient": 'vertical',
-              "left": 'left',
-              "shadowColor": 'rgba(0, 0, 0, 0.5)',
-              "shadowBlur": 10
-          },
-          "series": [
-              {
-                  "name": "Percentage to Papua's Island Administrative Boundary",
-                  "type": "pie",
-                  "center": ['50%', '50%'],
-                  "data": [
-                      { "value": forest_pct[forest_pct['forest_type'] == 'Hutan'].iloc[-1]['percentage'], "name": 'Hutan' },
-                      { "value": forest_pct[forest_pct['forest_type'] == 'Non Hutan'].iloc[-1]['percentage'], "name": 'Non Hutan' },
-                  ],
-                  "labelLine": {
-                      "lineStyle": {
-                        "color": 'rgba(255, 255, 255, 0.3)'
-                      },
-                      "smooth": 0.2,
-                      "length": 10,
-                      "length2": 15
-                  },
-                  "color": ['#00b04f', '#978594'],
-                  "itemStyle": {
-                      "emphasis": {
-                          "shadowBlur": 10,
-                          "shadowOffsetX": 0,
-                          "shadowColor": 'rgba(0, 0, 0, 0.5)'
-                      }
-                  },
-                  "animationType": 'scale',
-                  "animationEasing": 'elasticOut'
-              }
-          ]
-        }
-    elif forest_choices == '6 classes of forest vs Non Forest':
-        options = {
-            "title": {
-                "text": "Forest Classes vs Non Forest on " + str(year_choice),
-                "left": "center",
-                "top": 20,
-                "textStyle": {
-                    "color": "#2A2529"
-                }
-            },
-            "backgroundColor": '#c3c3c3',
-            "tooltip": {
-                "trigger": 'item',
-            },
-            "legend": {
-                "orient": 'vertical',
-                "left": 'left',
-                "shadowColor": 'rgba(0, 0, 0, 0.5)',
-                "shadowBlur": 10
-            },
-            "series": [
-                {
-                    "name": "Percentage to Papua's Island Administrative Boundary",
-                    "type": "pie",
-                    "radius": '55%',
-                    "center": ['50%', '50%'],
-                    "data": [
-                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Lahan Kering Primer'].iloc[-1]['percentage'], "name": 'Hutan Lahan Kering Primer' },
-                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Lahan Kering Sekunder'].iloc[-1]['percentage'], "name": 'Hutan Lahan Kering Sekunder' },
-                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Mangrove Primer'].iloc[-1]['percentage'], "name": 'Hutan Mangrove Primer' },
-                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Mangrove Sekunder'].iloc[-1]['percentage'], "name": 'Hutan Mangrove Sekunder' },
-                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Rawa Primer'].iloc[-1]['percentage'], "name": 'Hutan Rawa Primer' },
-                        { "value": forest_pct[forest_pct['forest_type'] == 'Hutan Rawa Sekunder'].iloc[-1]['percentage'], "name": 'Hutan Rawa Sekunder' },
-                        { "value": forest_pct[forest_pct['forest_type'] == 'Non Hutan'].iloc[-1]['percentage'], "name": 'Non Hutan' },
-                    ],
-                    "roseType": 'radius',
-                    "labelLine": {
-                        "lineStyle": {
-                          "color": 'rgba(255, 255, 255, 0.3)'
-                        },
-                        "smooth": 0.2,
-                        "length": 10,
-                        "length2": 15
-                    },
-                    "color": ['#00b04f', '#7BE32F', '#2F70E3', '#2FE3D2', '#ffbf00', '#E3D52F', '#978594'],
-                    "itemStyle": {
-                        "emphasis": {
-                            "shadowBlur": 10,
-                            "shadowOffsetX": 0,
-                            "shadowColor": 'rgba(0, 0, 0, 0.5)'
-                        }
-                    },
-                    "animationType": 'scale',
-                    "animationEasing": 'elasticOut'
-                }
-            ]
-        }
-    st_echarts(options=options, height="700px")
-
 overview_pie_forest()
+overview_forest_provinces()
 overview_forest_area()
 overview_forest_per_year()
