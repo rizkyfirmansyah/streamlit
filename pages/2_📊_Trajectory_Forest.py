@@ -22,7 +22,7 @@ expander_bar1.markdown("""<p>A Sankey diagram is a graphical representation of f
 <br><a href="https://upload.wikimedia.org/wikipedia/commons/1/10/JIE_Sankey_V5_Fig1.png" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/JIE_Sankey_V5_Fig1.png" style="width:280px; height:"auto";"></a><a href="https://en.wikipedia.org/wiki/Sankey_diagram" target="_blank" style="text-decoration:none;">Source: Wikipedia</a></p>""", unsafe_allow_html=True)
 
 def sankey_chart():
-    st.title("Trajectory of Forest in "+ province_choice +" ("+str(initial_year_choice)+" to "+str(last_year_choice)+")")
+    st.title("Trajectory (Sankey Diagram) of Forest in "+ province_choice +" ("+str(initial_year_choice)+" to "+str(last_year_choice)+")")
     initial_year_id = str(initial_year_choice)[2:]
     last_year_id = str(last_year_choice)[2:]
     query = """
