@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pydeck as pdk
 
-st.set_page_config(page_title="Forest Papua Map", page_icon="🌍")
+st.set_page_config(layout="wide", page_title="Forest Papua Map", page_icon="🌍")
 
 def forest_papua():
     """
