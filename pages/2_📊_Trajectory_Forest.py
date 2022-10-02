@@ -23,6 +23,7 @@ expander_bar1.markdown("""<p>A Sankey diagram is a graphical representation of f
 
 def sankey_chart():
     st.title("Trajectory (Sankey Diagram) of Forest in "+ province_choice +" ("+str(initial_year_choice)+" to "+str(last_year_choice)+")")
+    st.caption("Measured in hectares")
     initial_year_id = str(initial_year_choice)[2:]
     last_year_id = str(last_year_choice)[2:]
     query = """
@@ -54,6 +55,11 @@ def sankey_chart():
     sankey_links = [dict({'source': r.source, 'target': r.target, 'value': r.hectare}) for i, r in forest_sankey.iterrows()]
     sankey_data = [dict({'name': f}) for f in forest_sankey['target'].drop_duplicates().to_list() + forest_sankey['source'].drop_duplicates().to_list()]
     options = {
+        "tooltip": {
+            "trigger": 'item',
+            "triggerOn": 'mousemove',
+            # "formatter": "{b}: <strong>{c}</strong> ha"
+        },
         "series": {
             "type": 'sankey',
             "left": 0,
@@ -62,13 +68,6 @@ def sankey_chart():
             "bottom": 25.0,
             "emphasis": {
                 "focus": 'adjacency'
-            },
-            "tooltip": {
-                "trigger": 'item',
-                "show": True,
-                "showContent": True,
-                "alwaysShowContent": True,
-                "triggerOn": 'mousemove',
             },
             "data": sankey_data,
             "links": sankey_links,
