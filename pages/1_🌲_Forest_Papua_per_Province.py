@@ -8,17 +8,27 @@ st.set_page_config(layout="wide", page_title="Forest per Province", page_icon="ð
 forest_klhk = pd.read_csv("https://raw.githubusercontent.com/rizkyfirmansyah/streamlit/papua_forest/data/forest_klhk_papua_1990_2000.csv")
 province = forest_klhk['provinsi'].drop_duplicates().sort_values(ascending=False)
 province_choice = st.sidebar.selectbox('Filter by province:', province, key="province_" + str(province))
+years = forest_klhk['year'].drop_duplicates().sort_values(ascending=False)
+year_choice = st.sidebar.selectbox('Filter by year:', years)
+query_forest = """
+    select round(cast(sum(pct_to_boundary) as numeric), 2) as percentage, sum(hectare) as hectare
+    from forest_klhk
+    where year = """+ str(year_choice) +""" and provinsi = '"""+ str(province_choice) +"""'
+    and forest_type <> 'Non Hutan'
+"""
+forest_quantity = sqldf(query_forest)
 
 def overview_pie_forest():
     """
     Get percentage of forest stock & non forest on each year
     41228227.5 is total area of boundary papua islands based on calculate geometry World Cylindrical Equal Area
     """
-    st.title("Overview of Percentage Forest Stock & Non Forest in "+ province_choice +" (1990 - 2020)")
-    years = forest_klhk['year'].drop_duplicates().sort_values(ascending=False)
-    year_choice = st.selectbox('Filter by year:', years)
+    st.title("Overview of Percentage Forest Stock & Non Forest in "+ province_choice +", "+ str(year_choice))
     forest_classes = ['Forest vs Non Forest', '6 classes of forest vs Non Forest']
     forest_choices = st.selectbox('Simplify forest classes:', forest_classes)
+
+    st.header("In "+ str(year_choice) +", "+ province_choice +" had "+f'{int(forest_quantity.hectare):,}'+" hectares of forest*, extending over "+str(float(forest_quantity.percentage))+"% of its land area." )
+    st.markdown("""<h5>*forest derived from <a href="https://nfms.menlhk.go.id/metode">MoEF's land use land cover (LULC)</a> 23 classes, omitting Plantation Forest (Hutan Tanaman)</h5>""", unsafe_allow_html=True)
 
     if forest_choices == 'Forest vs Non Forest':
         query = """
@@ -153,11 +163,17 @@ def overview_forest_area():
     """
     Get latest of forest stock & non forest at the year of 2000
     """
-    st.title("Overview of Forest Stock & Non Forest in "+ province_choice +" (1990 - 2020)")
-    years = forest_klhk['year'].drop_duplicates().sort_values(ascending=False)
-    year_choice = st.selectbox('Filter by year:', years, key="forest_" + str(years))
-    forest_area = forest_klhk[(forest_klhk['year'] == year_choice) & (forest_klhk['provinsi'] == str(province_choice))]
-    forest_area_overview = forest_area.drop(columns=['year', 'pct_to_boundary'], axis=1).groupby('forest_type', as_index=False).sum()
+    st.title("Overview of Forest Stock & Non Forest in "+ province_choice +", "+ str(year_choice))
+    query_forest_area = """
+        select round(cast(sum(hectare) as numeric), 2) as hectare, forest_type 
+        from forest_klhk 
+        where year = """+ str(year_choice) +""" and provinsi = '"""+ str(province_choice) +"""'
+        group by forest_type 
+        order by 2 asc
+    """
+    forest_area_overview = sqldf(query_forest_area)
+    st.markdown("""<h4>Of """+f'{int(forest_quantity.hectare):,}'+""" ha of forest*, <i>"""+forest_area_overview.forest_type[0]+"""</i> was the largest forest cover, covering a total of """+f'{int(forest_area_overview.hectare[0]):,}'+"""ha</h4>""", unsafe_allow_html=True)
+
     options = {
         "title": {
             "text": "Forest area in "+ province_choice +" on " + str(year_choice),
@@ -228,6 +244,17 @@ def overview_forest_per_year():
     forest_overview_2018 = forest_klhk[(forest_klhk["year"] == 2018) & (forest_klhk["provinsi"] == str(province_choice))].drop(columns=['year', 'pct_to_boundary'], axis=1).groupby('forest_type', as_index=False).sum()
     forest_overview_2019 = forest_klhk[(forest_klhk["year"] == 2019) & (forest_klhk["provinsi"] == str(province_choice))].drop(columns=['year', 'pct_to_boundary'], axis=1).groupby('forest_type', as_index=False).sum()
     forest_overview_2020 = forest_klhk[(forest_klhk["year"] == 2020) & (forest_klhk["provinsi"] == str(province_choice))].drop(columns=['year', 'pct_to_boundary'], axis=1).groupby('forest_type', as_index=False).sum()
+    query_earliest_forest = """
+        select sum(hectare) as hectare from forest_overview_1990 where forest_type <> 'Non Hutan'
+    """
+    query_latest_forest = """
+        select sum(hectare) as hectare from forest_overview_2020 where forest_type <> 'Non Hutan'
+    """
+    earliest_forest = sqldf(query_earliest_forest)
+    latest_forest = sqldf(query_latest_forest)
+    st.markdown("""<h4>From 1990 to 2020, """+province_choice+""" lost <i>"""+f'{int(abs((latest_forest.hectare - earliest_forest.hectare))):,}'+"""</i> ha of forests</h4>""", unsafe_allow_html=True)
+
+
     options = {
         "tooltip": {
             "trigger": 'axis',

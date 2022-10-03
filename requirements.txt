@@ -2,4 +2,4 @@ streamlit
 pandas
 pandasql
 streamlit_echarts
-pydeck
+leafmap
